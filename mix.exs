@@ -1,7 +1,7 @@
-defmodule NervesSystemBbb.MixProject do
+defmodule GadgetSystemBbb.MixProject do
   use Mix.Project
 
-  @app :nerves_system_bbb
+  @app :gadget_system_bbb
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
            |> String.trim()
@@ -35,7 +35,7 @@ defmodule NervesSystemBbb.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_releases, "nerves-project/#{@app}"}
+        {:github_releases, "krodelin/#{@app}"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
@@ -58,7 +58,7 @@ defmodule NervesSystemBbb.MixProject do
 
   defp description do
     """
-    Nerves System - BeagleBone Black, BeagleBone Green, PocketBeagle and more
+    Gadget System - BeagleBone Black, BeagleBone Green, PocketBeagle and more with GadgetFS support
     """
   end
 
@@ -66,7 +66,7 @@ defmodule NervesSystemBbb.MixProject do
     [
       files: package_files(),
       licenses: ["Apache 2.0"],
-      links: %{"Github" => "https://github.com/nerves-project/#{@app}"}
+      links: %{"Github" => "https://github.com/krodelin/#{@app}"}
     ]
   end
 
