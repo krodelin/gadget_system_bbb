@@ -20,3 +20,8 @@ erl_crash.dump
 /build.log
 /archive.log
 /.nerves
+
+# Ignore IntelliJ files
+/.idea
+*.iml
+
